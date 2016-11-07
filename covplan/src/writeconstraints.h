@@ -1,0 +1,11 @@
+void declareVariables(ofstream & , int , int );
+void writeInitialLocationConstraints(ofstream & , pos_vec_t );
+void writeObstacleConstraints(ofstream & , dimension_t , pos_vec_t , int , int );
+void writeTransitionConstraints(ofstream & , prim_vec_t , dimension_t , pos_vec_t , int , int );
+void writeCostConstraint(ofstream & , dimension_t , pos_vec_t , int , int , float );
+void writeCollisionAvoidanceConstraints1(ofstream & , prim_vec_t , int , int );
+void writeCollisionAvoidanceConstraints2(ofstream & , prim_vec_t , int , int );
+void writeDistanceConstraints(ofstream & , int , int );
+void writeOutputConstraints(ofstream & , int , int );
+string floatToReal(string );
+template <typename T> string tostr(const T& );
